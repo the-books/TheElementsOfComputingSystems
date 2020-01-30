@@ -1,0 +1,8 @@
+CHIP TestNot {
+    IN in[2];
+    OUT out[2];
+
+    PARTS:
+    Not(in=in[0], out=out[0]);
+    /basic/Not(in=in[1], out=out[1]);
+}
