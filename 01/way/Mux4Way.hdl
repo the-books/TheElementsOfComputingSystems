@@ -11,11 +11,11 @@ CHIP Mux4Way {
     OUT out;
 
     PARTS:
-    Not(in=sel[0], out=notsel0);
     Not(in=sel[1], out=notsel1);
-    And3Way(a=a, b=notsel0, c=notsel1, out=o0);
-    And3Way(a=b, b=sel[0],  c=notsel1, out=o1);
-    And3Way(a=c, b=notsel0, c=sel[1],  out=o2);
-    And3Way(a=d, b=sel[0],  c=sel[1],  out=o3);
+    Not(in=sel[0], out=notsel0);
+    And3Way(a=a, b=notsel1, c=notsel0, out=o0);
+    And3Way(a=b, b=notsel1, c=sel[0],  out=o1);
+    And3Way(a=c, b=sel[1],  c=notsel0, out=o2);
+    And3Way(a=d, b=sel[1],  c=sel[0],  out=o3);
     Or4Way(in[0]=o0, in[1]=o1, in[2]=o2, in[3]=o3, out=out);
 }

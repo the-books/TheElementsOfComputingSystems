@@ -1,0 +1,14 @@
+/**
+ * 4-way And:
+ * If a=b=c=d=1 then out=1 else out=0.
+ */
+
+CHIP And4Way {
+  IN a, b, c, d;
+  OUT out;
+
+  PARTS:
+  And(a=a, b=b, out=out0);
+  And(a=out0, b=c, out=out1);
+  And(a=out1, b=d, out=out);
+}

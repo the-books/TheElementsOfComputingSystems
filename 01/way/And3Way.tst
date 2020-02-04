@@ -1,4 +1,3 @@
-
 load And3Way.hdl,
 output-file And3Way.out,
 compare-to And3Way.cmp,
@@ -51,4 +50,3 @@ set b 1,
 set c 1,
 eval,
 output;
-
