@@ -12,7 +12,7 @@
  * else if sel=100 then for i=1..15 out[i]=e[i]
  * else if sel=101 then for i=1..15 out[i]=f[i]
  * else if sel=110 then for i=1..15 out[i]=g[i]
- * else if sel=111 then for i=1..15 out[i]=h[i]
+ * else if sel=111 then for i=1..15 out[i]=h[i].
  */
 
 CHIP Mux8Way16 {

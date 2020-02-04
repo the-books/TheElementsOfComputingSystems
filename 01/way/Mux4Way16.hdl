@@ -8,7 +8,7 @@
  * If sel=00 then for i=1..15 out[i]=a[i]
  * else if sel=01 then for i=1..15 out[i]=b[i]
  * else if sel=10 then for i=1..15 out[i]=c[i]
- * else if sel=11 then for i=1..15 out[i]=d[i]
+ * else if sel=11 then for i=1..15 out[i]=d[i].
  */
 
 CHIP Mux4Way16 {

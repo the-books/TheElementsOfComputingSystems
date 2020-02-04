@@ -6,7 +6,7 @@
 /**
  * 16-bit multiplexor: 
  * If sel=0 then for i=0..15 out[i]=a[i]
- * else for i=0..15 out[i]=b[i].
+ * else if for i=0..15 out[i]=b[i].
  */
 
 CHIP Mux16 {

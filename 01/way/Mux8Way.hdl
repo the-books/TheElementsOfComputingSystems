@@ -7,7 +7,7 @@
  * else if sel=100 then out=e
  * else if sel=101 then out=f
  * else if sel=110 then out=g
- * else if sel=111 then out=h
+ * else if sel=111 then out=h.
  */
 
 CHIP Mux8Way {
