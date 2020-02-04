@@ -1,8 +1,13 @@
+/**
+ * 3-way And:
+ * If a=b=c=1 then out=1 else out=0.
+ */
+
 CHIP And3Way {
-  IN in[3];
+  IN a, b, c;
   OUT out;
 
   PARTS:
-  And(a=in[0], b=in[1], out=o0);
-  And(a=o0, b=in[2], out=out);
+  And(a=a, b=b, out=outand);
+  And(a=outand, b=c, out=out);
 }

@@ -1,3 +1,8 @@
+/**
+ * 4-way Or:
+ * out=Or(in[0],in[1],in[2],in[3]).
+ */
+
 CHIP Or4Way {
     IN in[4];
     OUT out;
