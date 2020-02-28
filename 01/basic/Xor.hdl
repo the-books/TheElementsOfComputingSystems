@@ -5,7 +5,7 @@
 
 /**
  * Exclusive-or gate:
- * if not(a==b) then out=1 else out=0.
+ * if a≠b then out=1 else out=0.
  */
 
 CHIP Xor {
